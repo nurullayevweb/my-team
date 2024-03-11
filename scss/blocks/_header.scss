@@ -66,6 +66,9 @@
     font-weight: 600;
     line-height: 155.556%;
 }
+.nav__link:hover{
+    color: var(--main-light-color);
+}
 
 .nav__btn {
     color: var(--main-text-color);
