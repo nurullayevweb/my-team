@@ -1,0 +1,24 @@
+/* VARIABLES */
+
+$main-bg-color: #fff;
+$main-text-color: #fff;
+$main-Midnight-Green: #014E56;
+$main-light-color: #F67E7E;
+$main-Rapture-Blue: #79C8C7;
+$main-Police-Blue: #2C6269;
+$Deep-Jungle-Green: #004047;
+$Sacramento-State-Green: #012F34;
+$Dark-Green: #002529;
+
+
+:root {
+  --main-bg-color: #{$main-bg-color};
+  --main-text-color: #{$main-text-color};
+  --main-Midnight-Green: #{$main-Midnight-Green};
+  --main-light-color: #{$main-light-color};
+  --main-Rapture-Blue: #{$main-Rapture-Blue};
+  --main-Police-Blue: #{$main-Police-Blue};
+  --Deep-Jungle-Green: #{$Deep-Jungle-Green};
+  --Sacramento-State-Green: #{$Sacramento-State-Green};
+  --Dark-Green: #{$Dark-Green};
+}

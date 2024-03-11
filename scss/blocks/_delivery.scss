@@ -1,0 +1,137 @@
+/*services*/
+.delivery {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 140px 0;
+    background-color: var(--Deep-Jungle-Green);
+    background-image: url(/images/delivery-bg-one.svg);
+    background-size: 147px 100px;
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+.delivery::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    right: 0;
+    bottom: -60px;
+    position: absolute;
+    background-image: url(/images/delivery-bg-two.svg);
+    background-size: 200px 200px;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+}
+
+.delivery__all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+}
+
+.delivery__title {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.delivery__title span {
+    color: var(--main-Rapture-Blue);
+}
+
+.delivery__list {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+}
+
+.delivery__item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+}
+
+.delivery__item-comment {
+    position: relative;
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 166.667%;
+    z-index: 20;
+}
+
+.delivery__item-comment::before {
+    content: '';
+    position: absolute;
+    top: -36px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 67px;
+    height: 56px;
+    background-image: url(/images/abzas.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.delivery__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery__profile-name {
+    color: var(--main-Rapture-Blue);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 155.556%;
+}
+
+.delivery__profile-about {
+    color: var(--main-text-color);
+    text-align: center;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 138.462%;
+    margin-bottom: 16px;
+}
+
+
+@media (min-width: 768px) {
+    .delivery {
+        padding: 140px 97px;
+    }
+}
+
+@media (min-width: 1050px) {
+    .delivery__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .delivery__title {
+        padding: 0 15%;
+    }
+}
+
+@media (min-width: 1150px) {
+    .delivery__title {
+        padding: 0 22%;
+    }
+}
+
+@media (min-width: 1240px) {
+    .delivery {
+        padding: 140px 0px;
+    }
+}

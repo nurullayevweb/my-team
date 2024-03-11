@@ -1,0 +1,60 @@
+/*contact*/
+
+.contact {
+    width: 100%;
+    padding: 84px 0;
+    background-color: var(--main-light-color);
+    background-image: url(/images/contact-bg.svg);
+    background-size: 200px 244px;
+    background-position: bottom -60px left;
+    background-repeat: no-repeat;
+}
+
+.contact__all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+.contact__title {
+    color: var(--Sacramento-State-Green);
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+}
+
+.contact__link {
+    max-width: 160px;
+    text-align: center;
+    color: var(--Sacramento-State-Green);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 155.556%;
+    padding: 10px 32px;
+    border-radius: 30px;
+    border: 2px solid #012F34;
+}
+
+.contact__link:hover{
+    color: var(--main-text-color);
+    background-color: var(--Sacramento-State-Green);
+}
+
+
+@media (min-width: 768px) {
+    .contact {
+        padding: 84px 97px;
+    }
+    .contact__all {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+@media (min-width: 1240px){
+    .contact {
+        padding: 84px 0px;
+    }
+}

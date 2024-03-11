@@ -1,0 +1,116 @@
+/* HERO */
+.hero {
+    width: 100%;
+    height: 60vh;
+    background-color: var(--main-Midnight-Green);
+    background-image: url(/images/herobg-two.svg);
+    background-size: 360px 200px;
+    background-repeat: no-repeat;
+    background-position: center bottom -60px;
+}
+
+.hero__all {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hero__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    overflow: hidden;
+}
+
+.hero__title {
+    color: var(--main-text-color);
+    max-width: 337px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100%;
+    margin: 0;
+}
+
+.hero__title span {
+    color: var(--main-light-color);
+}
+
+.hero__text {
+    color: var(--main-text-color);
+    max-width: 457px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 186.667%;
+}
+
+
+@media (min-width: 768px) {
+    .hero__title {
+        font-size: 64px;
+    }
+}
+
+
+@media (min-width: 999px) {
+
+    .container {
+        padding: 0 40px;
+    }
+
+    .hero {
+        background-position: right 10% bottom;
+    }
+
+    .hero__all {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__texts {
+        flex-direction: row;
+        // justify-content: space-between;
+        align-items: flex-end;
+        align-content: space-between;
+        gap: 26px;
+    }
+
+    .hero__title {
+        max-width: 400px;
+        text-align: start;
+        font-size: 72px;
+    }
+
+    .hero__text {
+        position: relative;
+        text-align: start;
+        font-size: 18px;
+    }
+
+    .hero__text::before {
+        content: '';
+        position: absolute;
+        width: 80px;
+        height: 4px;
+        top: -20px;
+        flex-shrink: 0;
+        background-color: var(--main-Rapture-Blue);
+    }
+}
+
+@media (min-width: 1100px) {
+    .hero__title {
+        max-width: 600px;
+        font-size: 100px;
+    }
+
+    .hero__text {
+        font-size: 20px;
+    }
+
+    .hero__text::before {
+        top: -40px;
+    }
+}
